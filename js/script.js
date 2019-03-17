@@ -10,6 +10,7 @@ const list = document.querySelector('ul.student-list');
 //Gets all the lis of the list above
 const students = list.children;
 //Calcs the amount of pages needed
+const numOfPages = Math.ceil(students.length / 10);
 //used for remove function and creating search bar
 const pageHeader = document.getElementsByClassName('page-header')[0];
 //used to create pagination div
